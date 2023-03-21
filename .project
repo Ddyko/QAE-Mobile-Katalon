@@ -134,7 +134,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< .project
 			<id>1679403249535</id>
+=======
+			<id>1679406121559</id>
+>>>>>>> .project
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -143,7 +147,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< .project
 			<id>1679403249549</id>
+=======
+			<id>1679406121588</id>
+>>>>>>> .project
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -152,7 +160,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< .project
 			<id>1679404523079</id>
+=======
+			<id>1679407147382</id>
+>>>>>>> .project
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -161,7 +173,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< .project
 			<id>1679404523101</id>
+=======
+			<id>1679407147401</id>
+>>>>>>> .project
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -170,7 +186,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< .project
 			<id>1679408776145</id>
+=======
+			<id>1679409922918</id>
+>>>>>>> .project
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -179,6 +199,7 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< .project
 			<id>1679408776172</id>
 			<name></name>
 			<type>6</type>
@@ -216,6 +237,9 @@
 		</filter>
 		<filter>
 			<id>1679409033564</id>
+=======
+			<id>1679409922924</id>
+>>>>>>> .project
 			<name></name>
 			<type>6</type>
 			<matcher>

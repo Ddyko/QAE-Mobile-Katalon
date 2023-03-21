@@ -57,42 +57,42 @@ class Register {
 
 		Mobile.verifyElementVisible(findTestObject('Register Page/text_Daftar'), 0)
 	}
-	
+
 	@When("User input name")
 	public void user_input_name() {
 		Mobile.setText(findTestObject('Register Page/field_nama'), 'Dyko', 0)
 	}
-	
+
 	@When("User input email")
 	public void user_input_email() {
 		Mobile.setText(findTestObject('Register Page/field_email'), RandomStringUtils.randomAlphanumeric(5)+'@gmail.com', 0)
 	}
-	
+
 	@When("User input correct format password")
 	public void user_input_correct_format_password() {
 		Mobile.setText(findTestObject('Register Page/field_password'), '123123', 0)
 	}
-	
+
 	@When("User input phone number")
 	public void user_input_phone_number() {
 		Mobile.setText(findTestObject('Register Page/field_hp'), '08123123123', 0)
 	}
-	
+
 	@When("User input city")
 	public void user_input_city() {
 		Mobile.setText(findTestObject('Register Page/field_kota'), 'tangerang', 0)
 	}
-	
+
 	@When("User input address")
 	public void user_input_address() {
 		Mobile.setText(findTestObject('Register Page/field_alamat'), 'pamulang', 0)
 	}
-	
+
 	@When("User clicks daftar button")
 	public void user_clicks_daftar_button() {
 		Mobile.tap(findTestObject('Register Page/button_daftar'), 0)
 	}
-	
+
 	@Then("User redirected to Akun Saya page")
 	public void user_redirected_to_Akun_Saya_page() {
 		Mobile.verifyElementVisible(findTestObject('Akun Page After Login/text_akun_saya'), 0)
