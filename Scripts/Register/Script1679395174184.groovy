@@ -23,13 +23,23 @@ Mobile.tap(findTestObject('button_akun'), 0)
 
 Mobile.tap(findTestObject('Akun Page Before Login/button_masuk'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Login Page/text_masuk'), 0)
+Mobile.tap(findTestObject('Login Page/A_Daftar'), 0)
 
-Mobile.setText(findTestObject('Login Page/field_email'), 'andiko2@gmail.com', 0)
+Mobile.verifyElementVisible(findTestObject('Register Page/text_Daftar'), 0)
 
-Mobile.setText(findTestObject('Login Page/field_password'), '123123', 0)
+Mobile.setText(findTestObject('Register Page/field_nama'), 'Dyko', 0)
 
-Mobile.tap(findTestObject('Login Page/button_login'), 0)
+Mobile.setText(findTestObject('Register Page/field_email'), 'udahmautelat@gmail.com', 0)
+
+Mobile.setText(findTestObject('Register Page/field_password'), 'jadipakemanual', 0)
+
+Mobile.setText(findTestObject('Register Page/field_hp'), '08123123123', 0)
+
+Mobile.setText(findTestObject('Register Page/field_kota'), 'tangerang', 0)
+
+Mobile.setText(findTestObject('Register Page/field_alamat'), 'pamulang', 0)
+
+Mobile.tap(findTestObject('Register Page/button_daftar'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Akun Page After Login/text_akun_saya'), 0)
 
