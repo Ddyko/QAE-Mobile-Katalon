@@ -19,6 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import cucumber.api.java.en.When
 import cucumber.api.java.en.Then
+import org.apache.commons.lang3.RandomStringUtils
 import internal.GlobalVariable
 
 public class edit_profile {
@@ -34,7 +35,7 @@ public class edit_profile {
 
 	@When("User edit name")
 	public void user_edit_name() {
-		Mobile.setText(findTestObject('Object Repository/Edit Profile Page/nama_field'), 'andiko', 0)
+		Mobile.setText(findTestObject('Object Repository/Edit Profile Page/nama_field'), RandomStringUtils.randomAlphabetic(7), 0)
 	}
 
 	@When("User tap simpan button")
@@ -59,7 +60,7 @@ public class edit_profile {
 
 	@When("User edit phone number")
 	public void user_edit_phone_number() {
-		Mobile.setText(findTestObject('Object Repository/Edit Profile Page/phone_field'), '082108210821', 0)
+		Mobile.setText(findTestObject('Object Repository/Edit Profile Page/phone_field'), RandomStringUtils.randomNumeric(12), 0)
 	}
 
 	@When("User tap city field")
