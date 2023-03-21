@@ -18,42 +18,35 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import cucumber.api.java.en.Given
-import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
+import cucumber.api.java.en.Then
 import internal.GlobalVariable
 
-public class Login {
-	@Given("User already open the app")
-	public void user_already_open_the_app() {
+public class detailProduct {
+	
+	@Given("User successfully login to homepage")
+	public void user_successfully_login_to_homepage() {
+		Mobile.startApplication('APK/app-release.apk', true)
+		Mobile.tap(findTestObject('button_akun'), 0)
+		Mobile.tap(findTestObject('Akun Page Before Login/button_masuk'), 0)
+		Mobile.setText(findTestObject('Login Page/field_email'), 'andiko2@gmail.com', 0)
+		Mobile.setText(findTestObject('Login Page/field_password'), '123123', 0)
+		Mobile.tap(findTestObject('Login Page/button_login'), 0)
+		Mobile.tap(findTestObject('Object Repository/Product_Detail_Page/btn_Beranda'), 0)
+	}
+	
+	@When("User tap product carousel")
+	public void user_tap_product_carousel() {
+		Mobile.tap(findTestObject('Object Repository/Product_Detail_Page/btn_productIcon'), 0)
+	}
+	
+	@Then("User can see detail of product information")
+	public void user_can_see_detail_of_product_information() {
+		Mobile.verifyElementVisible(findTestObject('Object Repository/Product_Detail_Page/btn_bid'), 0)
+	}
+	@Given("User already in landing page")
+	public void User_already_in_landing_page() {
 		Mobile.startApplication('APK/app-release.apk', true)
 	}
-
-	@Given("User already in login page")
-	public void user_already_in_login_page() {
-		Mobile.tap(findTestObject('button_akun'), 0)
-
-		Mobile.tap(findTestObject('Akun Page Before Login/button_masuk'), 0)
-
-		Mobile.verifyElementVisible(findTestObject('Login Page/text_masuk'), 0)
-	}
-
-	@When("User input registered email")
-	public void user_input_registered_email() {
-		Mobile.setText(findTestObject('Login Page/field_email'), 'andiko2@gmail.com', 0)
-	}
-
-	@When("User input correct password")
-	public void user_input_correct_password() {
-		Mobile.setText(findTestObject('Login Page/field_password'), '123123', 0)
-	}
-
-	@When("User clicks login button")
-	public void user_clicks_login_button() {
-		Mobile.tap(findTestObject('Login Page/button_login'), 0)
-	}
-
-	@Then("User successfully logged in and redirected to akun saya")
-	public void user_successfully_logged_in_and_redirected_to_akun_saya() {
-		Mobile.verifyElementVisible(findTestObject('Akun Page After Login/text_akun_saya'), 0)
-	}
+	
 }
