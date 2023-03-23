@@ -17,37 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('APK/app-release.apk', true)
-
-Mobile.tap(findTestObject('Add product/btn_jual'), 0)
-
-Mobile.tap(findTestObject('Akun Page Before Login/button_masuk'), 0)
-
-Mobile.setText(findTestObject('Login Page/field_email'), 'andiko2@gmail.com', 0)
-
-Mobile.setText(findTestObject('Login Page/field_password'), '123123', 0)
-
-Mobile.tap(findTestObject('Login Page/button_login'), 0)
-
-Mobile.setText(findTestObject('Add product/input_nama_produk'), 'mesin cuci', 0)
-
-Mobile.setText(findTestObject('Add product/input_harga_produk'), '1000000', 0)
-
-Mobile.tap(findTestObject('Add product/select_kategori'), 0)
-
-Mobile.tap(findTestObject('Add product/kategori_elektronik'), 0)
-
-Mobile.setText(findTestObject('Add product/input_lokasi_produk'), 'Serang', 0)
-
-Mobile.setText(findTestObject('Add product/input_deskripsi_produk'), 'mesin cuci mini', 0)
-
-Mobile.tap(findTestObject('Add product/btn_image'), 0)
-
-Mobile.tap(findTestObject('Add product/btn_galeri'), 0)
-
-Mobile.tap(findTestObject('Add product/image_washingmachine'), 0)
-
-Mobile.tap(findTestObject('Add product/btn_terbitkan'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Add product/daftarjualsaya_page'), 0)
+CucumberKW.runWithCucumberRunner(Runner.class)
 
