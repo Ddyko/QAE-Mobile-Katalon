@@ -42,9 +42,29 @@ public class Login {
 		Mobile.setText(findTestObject('Login Page/field_email'), 'andiko2@gmail.com', 0)
 	}
 
+	@When("User input unregistered email")
+	public void user_input_unregistered_email() {
+		Mobile.setText(findTestObject('Login Page/field_email'), 'bukanandiko@gmail.com', 0)
+	}
+
+	@When("User input empty email")
+	public void user_input_empty_email() {
+		Mobile.setText(findTestObject('Login Page/field_email'), '', 0)
+	}
+
 	@When("User input correct password")
 	public void user_input_correct_password() {
 		Mobile.setText(findTestObject('Login Page/field_password'), '123123', 0)
+	}
+
+	@When("User input incorrect password")
+	public void user_input_incorrect_password() {
+		Mobile.setText(findTestObject('Login Page/field_password'), '123456789', 0)
+	}
+
+	@When("User input empty password")
+	public void user_input_empty_password() {
+		Mobile.setText(findTestObject('Login Page/field_password'), '', 0)
 	}
 
 	@When("User clicks login button")
@@ -55,5 +75,10 @@ public class Login {
 	@Then("User successfully logged in and redirected to akun saya")
 	public void user_successfully_logged_in_and_redirected_to_akun_saya() {
 		Mobile.verifyElementVisible(findTestObject('Akun Page After Login/text_akun_saya'), 0)
+	}
+
+	@Then("User remain in login page")
+	public void user_remain_in_login_page() {
+		Mobile.verifyElementVisible(findTestObject('Login Page/text_masuk'), 0)
 	}
 }
