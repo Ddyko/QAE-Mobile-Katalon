@@ -63,14 +63,34 @@ class Register {
 		Mobile.setText(findTestObject('Register Page/field_nama'), 'Dyko', 0)
 	}
 
+	@When("User input empty name")
+	public void user_input_empty_name() {
+		Mobile.setText(findTestObject('Register Page/field_nama'), '', 0)
+	}
+
 	@When("User input email")
 	public void user_input_email() {
 		Mobile.setText(findTestObject('Register Page/field_email'), RandomStringUtils.randomAlphanumeric(5)+'@gmail.com', 0)
 	}
 
+	@When("User input already registered email")
+	public void user_input_already_registered_email() {
+		Mobile.setText(findTestObject('Register Page/field_email'), 'andiko2@gmail.com', 0)
+	}
+
+	@When("User input invalid format email")
+	public void user_input_invalid_format_email() {
+		Mobile.setText(findTestObject('Register Page/field_email'), 'a.com', 0)
+	}
+
 	@When("User input correct format password")
 	public void user_input_correct_format_password() {
 		Mobile.setText(findTestObject('Register Page/field_password'), '123123', 0)
+	}
+
+	@When("User input less than 6 character password")
+	public void user_input_less_than_6_character_password() {
+		Mobile.setText(findTestObject('Register Page/field_password'), '123', 0)
 	}
 
 	@When("User input phone number")
@@ -96,5 +116,10 @@ class Register {
 	@Then("User redirected to Akun Saya page")
 	public void user_redirected_to_Akun_Saya_page() {
 		Mobile.verifyElementVisible(findTestObject('Akun Page After Login/text_akun_saya'), 0)
+	}
+
+	@Then("User remain in register page")
+	public void user_remain_in_register_page() {
+		Mobile.verifyElementVisible(findTestObject('Register Page/text_Daftar'), 0)
 	}
 }
