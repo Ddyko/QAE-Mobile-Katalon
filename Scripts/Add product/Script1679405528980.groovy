@@ -29,17 +29,17 @@ Mobile.setText(findTestObject('Login Page/field_password'), '123123', 0)
 
 Mobile.tap(findTestObject('Login Page/button_login'), 0)
 
-Mobile.setText(findTestObject('Add product/input_nama_produk'), 'mesin cuci', 0)
+Mobile.setText(findTestObject('Add product/input_nama_produk'), '', 0)
 
-Mobile.setText(findTestObject('Add product/input_harga_produk'), '1000000', 0)
+Mobile.setText(findTestObject('Add product/input_harga_produk'), '', 0)
 
 Mobile.tap(findTestObject('Add product/select_kategori'), 0)
 
 Mobile.tap(findTestObject('Add product/kategori_elektronik'), 0)
 
-Mobile.setText(findTestObject('Add product/input_lokasi_produk'), 'Serang', 0)
+Mobile.setText(findTestObject('Add product/input_lokasi_produk'), '', 0)
 
-Mobile.setText(findTestObject('Add product/input_deskripsi_produk'), 'mesin cuci mini', 0)
+Mobile.setText(findTestObject('Add product/input_deskripsi_produk'), '', 0)
 
 Mobile.tap(findTestObject('Add product/btn_image'), 0)
 
