@@ -86,3 +86,16 @@ Feature: Product Android
       | A7.3    | product price field empty       |
       | A7.4    | location field empty            |
       | A7.5    | product description field empty |
+
+	@positive_case
+	Scenario: A8.1 - User want to delete product
+    
+    Given User already open the app
+    And User already in login page
+    And User input registered email
+    And User input correct password
+    And User clicks login button
+    And User tap daftar jual saya button
+    And User click trash icon
+    And User click delete
+    Then User successfully delete product
