@@ -170,3 +170,7 @@
 [35m[Appium][39m Closing session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
 [35m[Appium][39m Removing session 'c3249bb0-724d-444b-b505-206f4d853d1c' from our master session list
 [35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/c3249bb0-724d-444b-b505-206f4d853d1c[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/c3249bb0-724d-444b-b505-206f4d853d1c [39m[33m404[39m [90m59 ms - 2332[39m
+[35m[HTTP][39m [90m[39m
