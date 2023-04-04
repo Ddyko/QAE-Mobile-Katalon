@@ -32,7 +32,7 @@ Feature: Product Android
     And Click publish button
     Then Remain in add product page
 
-    Examples: 
+    Examples:
       | case_id | field                   |
       | A6.2    | name field empty        |
       | A6.3    | price field empty       |
@@ -80,7 +80,7 @@ Feature: Product Android
     And Click update button
     Then Remain in ubah product page
 
-    Examples: 
+    Examples:
       | case_id | field		                        |
       | A7.2    | product name field empty        |
       | A7.3    | product price field empty       |
@@ -89,7 +89,7 @@ Feature: Product Android
 
 	@positive_case
 	Scenario: A8.1 - User want to delete product
-    
+
     Given User already open the app
     And User already in login page
     And User input registered email
