@@ -33,3 +33,5 @@ Mobile.tap(findTestObject('Login Page/button_login'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Akun Page After Login/text_akun_saya'), 0)
 
+Mobile.sendKeys(findTestObject(null), '')
+
