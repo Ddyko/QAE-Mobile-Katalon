@@ -125,39 +125,39 @@ public class edit_profile {
 	public void user_will_be_redirected_to_account_page() {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Edit Profile Page/account_page'), 0)
 	}
-	
+
 	@When("User empty name field")
 	public void user_empty_name_field() {
 		Mobile.clearText(findTestObject('Object Repository/Edit Profile Page/nama_field'), 0)
 	}
-	
+
 	@When("User empty phone number field")
 	public void user_empty_phone_number_field() {
 		Mobile.clearText(findTestObject('Object Repository/Edit Profile Page/phone_field'), 0)
 	}
-	
+
 	@When("User empty city field")
 	public void user_empty_city_field() {
 		Mobile.clearText(findTestObject('Object Repository/Edit Profile Page/city_field'), 0)
 	}
-	
+
 	@When("User empty address field")
 	public void user_empty_address_field() {
 		Mobile.clearText(findTestObject('Object Repository/Edit Profile Page/address_field'), 0)
 	}
-	
+
 	@When("User empty email field")
 	public void user_empty_email_field() {
 		Mobile.clearText(findTestObject('Object Repository/Edit Profile Page/email_field'), 0)
 	}
-	
+
 	@When("User empty password field")
 	public void user_empty_password_field() {
 		Mobile.clearText(findTestObject('Object Repository/Edit Profile Page/old_password_field'), 0)
 		Mobile.clearText(findTestObject('Object Repository/Edit Profile Page/new_password_field'), 0)
 		Mobile.clearText(findTestObject('Object Repository/Edit Profile Page/confirm_password_field'), 0)
 	}
-	
+
 	@Then("User can see message that field must be filled")
 	public void user_can_see_message_that_field_must_be_filled() {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Edit Profile Page/warning_message'), 0)
