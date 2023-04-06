@@ -63,7 +63,7 @@ public class bidProduct {
 	@Then("Message appear that biding price has sent to seller")
 	public void message_appear_that_biding_price_has_sent_to_seller() {
 	}
-	
+
 	@Given("User successfully login to homepage seller")
 	public void user_successfully_login_to_homepage_seller() {
 		Mobile.startApplication('APK/app-release.apk', true)
@@ -74,7 +74,7 @@ public class bidProduct {
 		Mobile.setText(findTestObject('Login Page/field_password'), '123123123', 0)
 		Mobile.tap(findTestObject('Login Page/button_login'), 0)
 	}
-	
+
 	@Given("User successfully login to homepage buyer")
 	public void user_successfully_login_to_homepage_buyer() {
 		Mobile.startApplication('APK/app-release.apk', true)
@@ -86,7 +86,7 @@ public class bidProduct {
 		Mobile.tap(findTestObject('Login Page/button_login'), 0)
 		Mobile.tap(findTestObject('Object Repository/Bid Product/btn_Beranda'), 0)
 	}
-	
+
 	@When("User tap daftar jual saya")
 	public void user_tap_daftar_jual_saya() {
 		Mobile.tap(findTestObject('Object Repository/Akun Page After Login/daftar_jual'), 0)
