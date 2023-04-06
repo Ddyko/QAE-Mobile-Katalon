@@ -9,13 +9,13 @@ Feature: [AND] Edit Profile
     And User clicks login button
     Then User successfully logged in and redirected to akun saya
 
-    #@positive_case
-    #Scenario: [A11.1] User want to change profile picture
-    #When User tap pencil icon
-    #And User tap profile picture
-    #And User tap gallery button
-    #And User choose new picture from gallery
-    #Then User will be redirected to account page
+    @positive_case
+    Scenario: [A11.1] User want to change profile picture
+    When User tap pencil icon
+    And User tap profile picture
+    And User tap gallery button
+    And User choose new picture from gallery
+    Then User will be redirected to account page
     
     @positive_case
     Scenario Outline: User want to edit profile
