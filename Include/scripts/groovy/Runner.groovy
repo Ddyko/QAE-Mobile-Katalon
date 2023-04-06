@@ -26,10 +26,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 features = "Include/features",
 glue = "stepDefinition",
-tags = "@Register, @Profile, @Product",
+tags = "@Register, @Login, @Profile, @ProductCategory, @Product, @DetailProduct, @BidProduct",
 monochrome = true
 )
 
 public class Runner {
-	
 }
