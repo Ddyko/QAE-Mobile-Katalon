@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "1365E0E2D49B5F7A19FC8A26E924AEB7",
+  "keywordClasses": [
+    {
+      "name": "stepDefinition.Status",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}
