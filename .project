@@ -277,6 +277,7 @@
 				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
 			</matcher>
 		</filter>
+<<<<<<< .project
 		<filter>
 			<id>1680886478129</id>
 			<name></name>
@@ -295,5 +296,7 @@
 				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
 			</matcher>
 		</filter>
+=======
+>>>>>>> .project
 	</filteredResources>
 </projectDescription>
