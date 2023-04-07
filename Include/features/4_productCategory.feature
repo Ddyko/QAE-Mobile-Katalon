@@ -9,7 +9,7 @@ Feature: [AND] Homepage Category
             |case_id |   category                  |
             |A4.1.1  |   Semua                     |
             |A4.1.2  |   Elektronik                | 
-            |A4.1.3  |   Komputer							     |            
+            |A4.1.3  |   Komputer							     |                       
 
 @positive_case
     Scenario Outline: User want to browse product without login by <category> filter
