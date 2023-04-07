@@ -23,6 +23,7 @@ import cucumber.api.java.en.When
 import internal.GlobalVariable
 
 public class productcategory {
+<<<<<<< HEAD
 	@Given("User already at homepage")
 	public void User_already_at_homepage() {
 		Mobile.startApplication('APK/app-release.apk', true)
@@ -51,6 +52,39 @@ public class productcategory {
 	}
 	@Then("User can see product with selected Komputer")
 	public void User_can_see_product_with_selected_Komputer() {
+=======
+	class productCategory {
+
+		@Given("User already at homepage")
+		public void User_already_at_homepage() {
+			Mobile.startApplication('APK/app-release.apk', true)
+			Mobile.tap(findTestObject('Object Repository/Product_Detail_Page/btn_Beranda'), 0)
+		}
+
+		@When("User tap Semua button")
+		public void User_tap_Semua_button() {
+			Mobile.tap(findTestObject('Object Repository/Product_Category_Page/btn-semua'), 0)
+		}
+
+		@When("User tap Elektronik button")
+		public void User_tap_Elektronik_button() {
+			Mobile.tap(findTestObject('Object Repository/Product_Category_Page/btn_Elektronik'), 0)
+		}
+
+		@When("User tap Komputer button")
+		public void User_tap_Komputer_button() {
+			Mobile.tap(findTestObject('Object Repository/Product_Category_Page/btn-kom'), 0)
+		} 
+		@Then("User can see product with selected Semua")
+		public void User_can_see_product_with_selected_Semua() {
+		}
+		@Then("User can see product with selected Elektronik")
+		public void User_can_see_product_with_selected_Elektronik() {
+		}
+		@Then("User can see product with selected Komputer")
+		public void User_can_see_product_with_selected_Komputer() {
+		}
+>>>>>>> 4d412c5bb53ff7aba11c390bd0517e7988646e59
 	}
 }
 
