@@ -24,16 +24,16 @@ import internal.GlobalVariable
 
 public class detailProduct {
 
-//	@Given("User successfully login to homepage")
-//	public void user_successfully_login_to_homepage() {
-//		Mobile.startApplication('APK/app-release.apk', true)
-//		Mobile.tap(findTestObject('button_akun'), 0)
-//		Mobile.tap(findTestObject('Akun Page Before Login/button_masuk'), 0)
-//		Mobile.setText(findTestObject('Login Page/field_email'), 'andiko2@gmail.com', 0)
-//		Mobile.setText(findTestObject('Login Page/field_password'), '123123', 0)
-//		Mobile.tap(findTestObject('Login Page/button_login'), 0)
-//		Mobile.tap(findTestObject('Object Repository/Product_Detail_Page/btn_Beranda'), 0)
-//	}
+	//	@Given("User successfully login to homepage")
+	//	public void user_successfully_login_to_homepage() {
+	//		Mobile.startApplication('APK/app-release.apk', true)
+	//		Mobile.tap(findTestObject('button_akun'), 0)
+	//		Mobile.tap(findTestObject('Akun Page Before Login/button_masuk'), 0)
+	//		Mobile.setText(findTestObject('Login Page/field_email'), 'andiko2@gmail.com', 0)
+	//		Mobile.setText(findTestObject('Login Page/field_password'), '123123', 0)
+	//		Mobile.tap(findTestObject('Login Page/button_login'), 0)
+	//		Mobile.tap(findTestObject('Object Repository/Product_Detail_Page/btn_Beranda'), 0)
+	//	}
 
 	@When("User tap product carousel")
 	public void user_tap_product_carousel() {
