@@ -18,34 +18,39 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import cucumber.api.java.en.Given
-import cucumber.api.java.en.When
 import cucumber.api.java.en.Then
+import cucumber.api.java.en.When
 import internal.GlobalVariable
 
-public class detailProduct {
-
-	//	@Given("User successfully login to homepage")
-	//	public void user_successfully_login_to_homepage() {
-	//		Mobile.startApplication('APK/app-release.apk', true)
-	//		Mobile.tap(findTestObject('button_akun'), 0)
-	//		Mobile.tap(findTestObject('Akun Page Before Login/button_masuk'), 0)
-	//		Mobile.setText(findTestObject('Login Page/field_email'), 'andiko2@gmail.com', 0)
-	//		Mobile.setText(findTestObject('Login Page/field_password'), '123123', 0)
-	//		Mobile.tap(findTestObject('Login Page/button_login'), 0)
-	//		Mobile.tap(findTestObject('Object Repository/Product_Detail_Page/btn_Beranda'), 0)
-	//	}
-
-	@When("User tap product carousel")
-	public void user_tap_product_carousel() {
-		Mobile.tap(findTestObject('Object Repository/Product_Detail_Page/btn_productIcon'), 0)
-	}
-
-	@Then("User can see detail of product information")
-	public void user_can_see_detail_of_product_information() {
-		Mobile.verifyElementVisible(findTestObject('Object Repository/Product_Detail_Page/btn_bid'), 0)
-	}
-	@Given("User already in landing page")
-	public void User_already_in_landing_page() {
+public class productcategory {
+	@Given("User already at homepage")
+	public void User_already_at_homepage() {
 		Mobile.startApplication('APK/app-release.apk', true)
+		Mobile.tap(findTestObject('Object Repository/Product_Detail_Page/btn_Beranda'), 0)
+	}
+
+	@When("User tap Semua button")
+	public void User_tap_Semua_button() {
+		Mobile.tap(findTestObject('Object Repository/Product_Category_Page_Login/semua'), 0)
+	}
+
+	@When("User tap Elektronik button")
+	public void User_tap_Elektronik_button() {
+		Mobile.tap(findTestObject('Object Repository/Product_Category_Page_Login/elektronik'), 0)
+	}
+
+	@When("User tap Komputer button")
+	public void User_tap_Komputer_button() {
+		Mobile.tap(findTestObject('Object Repository/Product_Category_Page_Login/komputer'), 0)
+	}
+	@Then("User can see product with selected Semua")
+	public void User_can_see_product_with_selected_Semua() {
+	}
+	@Then("User can see product with selected Elektronik")
+	public void User_can_see_product_with_selected_Elektronik() {
+	}
+	@Then("User can see product with selected Komputer")
+	public void User_can_see_product_with_selected_Komputer() {
 	}
 }
+

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "keywordFileContentHash": "8F3E1CC777155F4D27819CD77C8C15A3",
+=======
+  "keywordFileContentHash": "E0F4BC3133823DEB4792F8E314D1C527",
+>>>>>>> 4d412c5bb53ff7aba11c390bd0517e7988646e59
   "keywordClasses": [
     {
       "name": "stepDefinition.bidProduct",
