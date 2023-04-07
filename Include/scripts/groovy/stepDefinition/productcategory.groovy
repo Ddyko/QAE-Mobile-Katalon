@@ -25,6 +25,7 @@ import internal.GlobalVariable
 public class productcategory {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@Given("User already at homepage")
 	public void User_already_at_homepage() {
 		Mobile.startApplication('APK/app-release.apk', true)
@@ -54,6 +55,8 @@ public class productcategory {
 	@Then("User can see product with selected Komputer")
 	public void User_can_see_product_with_selected_Komputer() {
 =======
+=======
+>>>>>>> 4d412c5bb53ff7aba11c390bd0517e7988646e59
 =======
 >>>>>>> 4d412c5bb53ff7aba11c390bd0517e7988646e59
 	class productCategory {
@@ -88,6 +91,9 @@ public class productcategory {
 		public void User_can_see_product_with_selected_Komputer() {
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 4d412c5bb53ff7aba11c390bd0517e7988646e59
+=======
 >>>>>>> 4d412c5bb53ff7aba11c390bd0517e7988646e59
 =======
 >>>>>>> 4d412c5bb53ff7aba11c390bd0517e7988646e59
