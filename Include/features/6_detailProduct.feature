@@ -1,3 +1,4 @@
+@DetailProduct
 Feature: Homepage Product
 
 @positive_case
