@@ -141,4 +141,9 @@ public class bidProduct {
 	public void user_tap_simpan() {
 		Mobile.tap(findTestObject('Object Repository/Receive_Bid_Page/btn_set_status'), 0)
 	}
+	@Given("User already at homepage")
+	public void user_already_at_homepage() {
+		Mobile.startApplication('APK/app-release.apk', true)
+		Mobile.tap(findTestObject('Object Repository/Bid Product/btn_Beranda'), 0)
+	}
 }
