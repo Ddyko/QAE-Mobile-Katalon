@@ -23,7 +23,7 @@ import cucumber.api.java.en.When
 import internal.GlobalVariable
 
 public class productcategory {
-	class productCategory {
+
 
 		@Given("User already at homepage")
 		public void User_already_at_homepage() {
@@ -44,7 +44,7 @@ public class productcategory {
 		@When("User tap Komputer button")
 		public void User_tap_Komputer_button() {
 			Mobile.tap(findTestObject('Object Repository/Product_Category_Page/btn-kom'), 0)
-		} 
+		}
 		@Then("User can see product with selected Semua")
 		public void User_can_see_product_with_selected_Semua() {
 		}
@@ -55,5 +55,5 @@ public class productcategory {
 		public void User_can_see_product_with_selected_Komputer() {
 		}
 	}
-}
+
 
