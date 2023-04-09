@@ -210,11 +210,11 @@ public class Product {
 	}
 	@When("User click trash icon")
 	public void User_click_trash_icon() {
-		Mobile.tap(findTestObject('Object Repository/Add product/btn_hapusProduct'), 0)
+		Mobile.tap(findTestObject('Object Repository/Add product/trash_image2'), 0)
 	}
 	@When("User click delete")
 	public void User_click_delete() {
-		Mobile.tap(findTestObject('Object Repository/Add product/btn_ConfirmHapus'), 0)
+		Mobile.tap(findTestObject('Object Repository/Add product/hapus_produk'), 0)
 	}
 	@Then("User successfully delete product")
 	public void User_successfully_delete_product() {

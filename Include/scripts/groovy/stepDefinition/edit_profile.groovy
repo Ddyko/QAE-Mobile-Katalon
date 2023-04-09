@@ -108,17 +108,17 @@ public class edit_profile {
 
 	@When("User tap profile picture")
 	public void user_tap_profile_picture() {
-		Mobile.tap(findTestObject('Object Repository/Edit Profile Page/profile_image'), 0)
+		Mobile.tap(findTestObject('Object Repository/Edit Profile Page/imageview'), 0)
 	}
 
 	@When("User tap gallery button")
 	public void user_tap_gallery_button() {
-		Mobile.tap(findTestObject('Object Repository/Edit Profile Page/btn_galeri'), 0)
+		Mobile.tap(findTestObject('Object Repository/Edit Profile Page/btn_galery'), 0)
 	}
 
 	@When("User choose new picture from gallery")
 	public void user_choose_new_picture_from_gallery() {
-		Mobile.tap(findTestObject('Object Repository/Edit Profile Page/new_image'), 0)
+		Mobile.tap(findTestObject('Object Repository/Edit Profile Page/image_profile_1'), 0)
 	}
 
 	@Then("User will be redirected to account page")
