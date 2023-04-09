@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "7E337F4CD42944C987B4A45E1AD4CADE",
+  "keywordFileContentHash": "7C4B6042B1616429D12DB8B68BCDA099",
   "keywordClasses": [
     {
       "name": "stepDefinition.bidProduct",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

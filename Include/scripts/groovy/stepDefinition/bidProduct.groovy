@@ -107,8 +107,8 @@ public class bidProduct {
 		Mobile.tap(findTestObject('Object Repository/Receive_Bid_Page/btn_terima'), 0)
 	}
 
-	@Then("Message appear that bid is accepted")
-	public void message_appear_that_bid_is_accepted() {
+	@Then("User can see message that bid is accepted")
+	public void User_can_see_message_that_bid_is_accepted() {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Receive_Bid_Page/btn_hubungi'), 0)
 	}
 
@@ -117,8 +117,8 @@ public class bidProduct {
 		Mobile.tap(findTestObject('Object Repository/Receive_Bid_Page/btn_tolak'), 0)
 	}
 
-	@Then("Message appear that product bid rejected")
-	public void message_appear_that_product_bid_rejected() {
+	@Then("User can see message that product bid rejected")
+	public void User_can_see_message_that_product_bid_rejected() {
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Receive_Bid_Page/info_penawar'), 0)
 	}
 
@@ -141,9 +141,9 @@ public class bidProduct {
 	public void user_tap_simpan() {
 		Mobile.tap(findTestObject('Object Repository/Receive_Bid_Page/btn_set_status'), 0)
 	}
-	@Given("User already at homepage")
-	public void user_already_at_homepage() {
-		Mobile.startApplication('APK/app-release.apk', true)
-		Mobile.tap(findTestObject('Object Repository/Bid Product/btn_Beranda'), 0)
-	}
+//	@Given("User already at homepage")
+//	public void user_already_at_homepage() {
+//		Mobile.startApplication('APK/app-release.apk', true)
+//		Mobile.tap(findTestObject('Object Repository/Bid Product/btn_Beranda'), 0)
+//	}
 }
